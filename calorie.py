@@ -1,4 +1,4 @@
-from temperature import Tempearature
+from temperature import Temperature
 
 
 
@@ -15,6 +15,6 @@ class Calorie:
 
 
 if __name__ == "__main__":
-    temperature = Tempearature(country = "italy", city= "rome").get()
+    temperature = Temperature(country = "italy", city= "rome").get()
     calorie = Calorie(weight = 70, height = 175, age=32,temperature= temperature )
-    
+    print(calorie.calculate())
